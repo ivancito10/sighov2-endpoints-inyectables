@@ -1,0 +1,177 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: ENFERMERIA
+meta:
+  id: wrk_aacb05306e6849558552bc6392acd9c5
+  created: 1790353734021
+  modified: 1790368437698
+  description: ""
+collection:
+  - url: http://localhost:3000/api/auth/login
+    name: Login Auth
+    meta:
+      id: req_87b2e60f97154c48a4ac246b83030273
+      created: 1790353751017
+      modified: 1790598852727
+      isPrivate: false
+      description: ""
+      sortKey: -1790353751017
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "username": "iphilcoc-ext-30365",
+          "password": "6877367Lp"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://192.168.2.56:8000/api/auth/login
+    name: Login 8000
+    meta:
+      id: req_103d118bf84745ff84c4009d350a35ba
+      created: 1790697437934
+      modified: 1790951034385
+      isPrivate: false
+      description: ""
+      sortKey: -1790697437934
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email":"lvallejosm@ssulapaz.org",
+        	"password":"10909905lPp"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - name: VIA PARENTAL
+    meta:
+      id: fld_204bfa4830f841b4ae7cc18486542029
+      created: 1790599110377
+      modified: 1790599110377
+      sortKey: -1790599110377
+      description: ""
+    children:
+      - url: http://localhost:3000/api/enfermeria/vias-parenterales
+        name: GET Vía Parental
+        meta:
+          id: req_70ca31185eb34823b0df5c767915a6e8
+          created: 1790368884122
+          modified: 1790599161542
+          isPrivate: false
+          description: ""
+          sortKey: -1790599129625
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDU5ODg1MywiZXhwIjoxNzkwNjI3NjUzfQ.-yC7LGzsVkGBNJntywq10WjO_4JSICqLcM4pkyDnoCw
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "http://localhost:3000/api/enfermeria/vias-parenterales "
+        name: "POST Crear "
+        meta:
+          id: req_c5936f65eab74b2d979f7a72c17f8703
+          created: 1790602771513
+          modified: 1790602846154
+          isPrivate: false
+          description: ""
+          sortKey: -1790602771513
+        method: GET
+        body:
+          mimeType: application/json
+          text: |-
+            { 
+
+              "codigo": "IM", 
+
+              "nombre": "Intramuscular" 
+
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDU5ODg1MywiZXhwIjoxNzkwNjI3NjUzfQ.-yC7LGzsVkGBNJntywq10WjO_4JSICqLcM4pkyDnoCw
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "http://localhost:3000/api/enfermeria/vias-parenterales/1/toggle "
+        name: New Request
+        meta:
+          id: req_cbda02efa8554341ae65e6b0362d31d7
+          created: 1790602869296
+          modified: 1790602895227
+          isPrivate: false
+          description: ""
+          sortKey: -1790602869296
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            { 
+
+              "estado": true 
+
+            } 
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: PACIENTE
+    meta:
+      id: fld_e763e771d41c4209b7af5e4c1b77ec8c
+      created: 1790951215688
+      modified: 1790951215688
+      sortKey: -1790951215688
+      description: ""
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3bd0d039f4b2a8c7f8ef89377cd815831bd29a7b
+    created: 1790353734025
+    modified: 1790353734025
+environments:
+  name: Base Environment
+  meta:
+    id: env_3bd0d039f4b2a8c7f8ef89377cd815831bd29a7b
+    created: 1790353734022
+    modified: 1790353734022
+    isPrivate: false
