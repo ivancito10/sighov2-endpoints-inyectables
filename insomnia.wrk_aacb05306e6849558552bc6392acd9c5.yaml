@@ -63,6 +63,27 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: http://192.168.2.56:8001/api/s1/administracion/poblacion_asegurada
+    name: New Request
+    meta:
+      id: req_d4317b7525954d778bca7cb7dc5e5c36
+      created: 1790959938780
+      modified: 1790966613905
+      isPrivate: false
+      description: ""
+      sortKey: -1790353750817
+    method: GET
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1OTQxMywiZXhwIjoxNzkwOTg4MjEzfQ.frV-wdLZajC3UpbvKbBiRoJyS59j3laB8P6xxe9rjDU
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
   - name: VIA PARENTAL
     meta:
       id: fld_204bfa4830f841b4ae7cc18486542029
@@ -131,7 +152,7 @@ collection:
         meta:
           id: req_cbda02efa8554341ae65e6b0362d31d7
           created: 1790602869296
-          modified: 1790958074646
+          modified: 1790959428548
           isPrivate: false
           description: ""
           sortKey: -1790602869296
@@ -141,12 +162,15 @@ collection:
           text: |-
             { 
 
-              "estado": true 
+              "estado": false 
 
             } 
         headers:
           - name: Content-Type
             value: application/json
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1OTQxMywiZXhwIjoxNzkwOTg4MjEzfQ.frV-wdLZajC3UpbvKbBiRoJyS59j3laB8P6xxe9rjDU
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -162,6 +186,28 @@ collection:
       modified: 1790951215688
       sortKey: -1790951215688
       description: ""
+    children:
+      - url: http://localhost:3000/api/pacientes/8467
+        name: Buscar paciente persona
+        meta:
+          id: req_a38d6106276641468d055830046de484
+          created: 1790961743709
+          modified: 1790961869924
+          isPrivate: false
+          description: ""
+          sortKey: -1790961743709
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk2MTgxMywiZXhwIjoxNzkwOTkwNjEzfQ.jISHOYduwa2IPknrfVKA3aMCNfpLIal4Pbmm8E-O7ts
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
   - name: REGISTRO INYECCIONES
     meta:
       id: fld_25a05ede97744588a40877c25e96ddb5
@@ -175,7 +221,7 @@ collection:
         meta:
           id: req_0129c40089c74f3dbb1e64f102920237
           created: 1790952650037
-          modified: 1790953046590
+          modified: 1790958593714
           isPrivate: false
           description: ""
           sortKey: -1790952650037
@@ -305,6 +351,126 @@ collection:
         authentication:
           type: bearer
           token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1NzY4MiwiZXhwIjoxNzkwOTg2NDgyfQ.oDfoi5nU1A5FAB8SfTRZytMvEj5qpcQmdFMpWzGDmIE
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: RECETA MANUAL
+    meta:
+      id: fld_b49060adefaf4a83b05bd2254bc7856f
+      created: 1790958412131
+      modified: 1790958412131
+      sortKey: -1790958412131
+      description: ""
+    children:
+      - url: http://localhost:3000/api/enfermeria/recetas-manuales
+        name: Crear receta manual
+        meta:
+          id: req_d37b4bdde7e1401fbd4dc8ab9a619a62
+          created: 1790958419248
+          modified: 1790958652400
+          isPrivate: false
+          description: ""
+          sortKey: -1790958419248
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "idPersona": 1,
+              "idEspecialista": 1,
+              "idMedicamento": 10,
+              "fechaReceta": "2026-09-24"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1ODEyNywiZXhwIjoxNzkwOTg2OTI3fQ.C5vqkvzkY3NDPepqBjcCseP77w1okQBaezi9JE_TzUs
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/enfermeria/recetas-manuales/paciente/14478925
+        name: "Recetas manuales de paciente "
+        meta:
+          id: req_e0781b4593f84ab4abba607ef043e9b6
+          created: 1790958677924
+          modified: 1790959369088
+          isPrivate: false
+          description: ""
+          sortKey: -1790958419148
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1ODEyNywiZXhwIjoxNzkwOTg2OTI3fQ.C5vqkvzkY3NDPepqBjcCseP77w1okQBaezi9JE_TzUs
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: RECETA SISTEMA
+    meta:
+      id: fld_6564f46b4bf04f36ba35906aac93936b
+      created: 1790960712075
+      modified: 1790960712075
+      sortKey: -1790960712075
+      description: ""
+    children:
+      - url: http://localhost:3000/api/enfermeria/recetas-sistema/845
+        name: Buscar numero receta sistema
+        meta:
+          id: req_1296301e1f424cd79017e19b36697ab6
+          created: 1790960723445
+          modified: 1790962052412
+          isPrivate: false
+          description: ""
+          sortKey: -1790961461944
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1OTQxMywiZXhwIjoxNzkwOTg4MjEzfQ.frV-wdLZajC3UpbvKbBiRoJyS59j3laB8P6xxe9rjDU
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: MEDICAMENTO
+    meta:
+      id: fld_8b2e78f778e54046bf28e50d77940b36
+      created: 1790965676828
+      modified: 1790965676828
+      sortKey: -1790965676828
+      description: ""
+    children:
+      - url: http://192.168.2.56:8001/api/s1/administracion/ci/14478925
+        name: New Request
+        meta:
+          id: req_3d9478db02bd4ffd8c7958e19cf45727
+          created: 1790965680719
+          modified: 1790967419571
+          isPrivate: false
+          description: ""
+          sortKey: -1790965680719
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTkyLjE2OC4yLjU2OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3OTA5NjY2NjUsImV4cCI6MTc5MDk3NzQ2NSwibmJmIjoxNzkwOTY2NjY1LCJqdGkiOiJJS2t5c0ZtV2g4SEFnRkVjIiwic3ViIjoiMTU5MTgiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SpbAK61DtqM-4C7kwuXxILTB0YEQoSeV8f3CegGxH8Q
         settings:
           renderRequestBody: true
           encodeUrl: true
