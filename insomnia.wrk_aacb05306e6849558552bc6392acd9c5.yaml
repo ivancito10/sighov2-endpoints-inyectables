@@ -40,7 +40,7 @@ collection:
     meta:
       id: req_103d118bf84745ff84c4009d350a35ba
       created: 1790697437934
-      modified: 1790951034385
+      modified: 1790952173324
       isPrivate: false
       description: ""
       sortKey: -1790697437934
@@ -162,6 +162,35 @@ collection:
       modified: 1790951215688
       sortKey: -1790951215688
       description: ""
+  - name: REGISTRO INYECCIONES
+    meta:
+      id: fld_25a05ede97744588a40877c25e96ddb5
+      created: 1790952643311
+      modified: 1790952643311
+      sortKey: -1790952643311
+      description: ""
+    children:
+      - url: http://localhost:3000/api/enfermeria/inyecciones/2
+        name: Buscar inyección registrado
+        meta:
+          id: req_0129c40089c74f3dbb1e64f102920237
+          created: 1790952650037
+          modified: 1790953046590
+          isPrivate: false
+          description: ""
+          sortKey: -1790952650037
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1MjkwMSwiZXhwIjoxNzkwOTgxNzAxfQ.a1T5QqedTKrGKEhB5R83Ts_sJUbxoXN6TclozcoFhrk
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
