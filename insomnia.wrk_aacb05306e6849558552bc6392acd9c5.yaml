@@ -40,10 +40,10 @@ collection:
     meta:
       id: req_103d118bf84745ff84c4009d350a35ba
       created: 1790697437934
-      modified: 1790952173324
+      modified: 1790958302352
       isPrivate: false
       description: ""
-      sortKey: -1790697437934
+      sortKey: -1790353750917
     method: POST
     body:
       mimeType: application/json
@@ -72,18 +72,18 @@ collection:
       description: ""
     children:
       - url: http://localhost:3000/api/enfermeria/vias-parenterales
-        name: GET Vía Parental
+        name: Mostrar Vías Parentales
         meta:
           id: req_70ca31185eb34823b0df5c767915a6e8
           created: 1790368884122
-          modified: 1790599161542
+          modified: 1790958182345
           isPrivate: false
           description: ""
           sortKey: -1790599129625
         method: GET
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDU5ODg1MywiZXhwIjoxNzkwNjI3NjUzfQ.-yC7LGzsVkGBNJntywq10WjO_4JSICqLcM4pkyDnoCw
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1ODEyNywiZXhwIjoxNzkwOTg2OTI3fQ.C5vqkvzkY3NDPepqBjcCseP77w1okQBaezi9JE_TzUs
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -93,15 +93,15 @@ collection:
             store: true
           rebuildPath: true
       - url: "http://localhost:3000/api/enfermeria/vias-parenterales "
-        name: "POST Crear "
+        name: Crear Vía
         meta:
           id: req_c5936f65eab74b2d979f7a72c17f8703
           created: 1790602771513
-          modified: 1790602846154
+          modified: 1790958242649
           isPrivate: false
           description: ""
           sortKey: -1790602771513
-        method: GET
+        method: POST
         body:
           mimeType: application/json
           text: |-
@@ -127,11 +127,11 @@ collection:
             store: true
           rebuildPath: true
       - url: "http://localhost:3000/api/enfermeria/vias-parenterales/1/toggle "
-        name: New Request
+        name: "Cambiar estado "
         meta:
           id: req_cbda02efa8554341ae65e6b0362d31d7
           created: 1790602869296
-          modified: 1790602895227
+          modified: 1790958074646
           isPrivate: false
           description: ""
           sortKey: -1790602869296
@@ -275,6 +275,36 @@ collection:
         authentication:
           type: bearer
           token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1MjkwMSwiZXhwIjoxNzkwOTgxNzAxfQ.a1T5QqedTKrGKEhB5R83Ts_sJUbxoXN6TclozcoFhrk
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/enfermeria/inyecciones/2/estado
+        name: Cambio de estado de Inyeccion
+        meta:
+          id: req_e2b78d1a4d6449688f164ffe9ec7cb11
+          created: 1790957388287
+          modified: 1790957764457
+          isPrivate: false
+          description: ""
+          sortKey: -1790957388287
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "estado": true
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1NzY4MiwiZXhwIjoxNzkwOTg2NDgyfQ.oDfoi5nU1A5FAB8SfTRZytMvEj5qpcQmdFMpWzGDmIE
         settings:
           renderRequestBody: true
           encodeUrl: true
