@@ -191,6 +191,98 @@ collection:
             send: true
             store: true
           rebuildPath: true
+      - url: http://localhost:3000/api/enfermeria/inyecciones/3
+        name: Modificar inyeccion receta manual
+        meta:
+          id: req_ad9a905481f64260b093854f854f01aa
+          created: 1790956838034
+          modified: 1790957142179
+          isPrivate: false
+          description: ""
+          sortKey: -1790956838034
+        method: GET
+        body:
+          mimeType: application/json
+          text: >-
+            {
+              "idPersona": 14478925,
+              "idEspecialista": 1,
+              "fechaReceta": "2026-09-30",
+              "idViaParenteral": 1,
+              "medicamentos": [
+                {
+                  "idMedicamento": 128,
+                  "idViaParenteral": 1,
+                  "idRecetaManual": 1,
+                  "observacion": "Dexametasona 4mg - Corregida prescripción manual"
+                }
+              ],
+              "procedimientos": {
+                "curacionPlana": false,
+                "retiroPuntos": true,
+                "pruebaSensibilidad": false,
+                "sangria": false,
+                "observaciones": "Se realizó retiro de puntos sin complicaciones"
+              }
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1MjkwMSwiZXhwIjoxNzkwOTgxNzAxfQ.a1T5QqedTKrGKEhB5R83Ts_sJUbxoXN6TclozcoFhrk
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/enfermeria/inyecciones/2
+        name: Modificar inyeccion receta sistema
+        meta:
+          id: req_60d51b1933ca4717b45e65bf4e32e28e
+          created: 1790957028053
+          modified: 1790957130867
+          isPrivate: false
+          description: ""
+          sortKey: -1790957028053
+        method: GET
+        body:
+          mimeType: application/json
+          text: >-
+            {
+              "idViaParenteral": 2,
+              "medicamentos": [
+                {
+                  "idMedicamento": 128,
+                  "idViaParenteral": 2,
+                  "idReceta": 8527,
+                  "observacion": "Dexametasona 4mg - Se cambió a vía intravenosa"
+                }
+              ],
+              "procedimientos": {
+                "curacionPlana": true,
+                "oxigenoterapia": false,
+                "pruebaSensibilidad": true,
+                "observaciones": "Procedimiento ajustado en sala"
+              }
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1MjkwMSwiZXhwIjoxNzkwOTgxNzAxfQ.a1T5QqedTKrGKEhB5R83Ts_sJUbxoXN6TclozcoFhrk
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
