@@ -271,12 +271,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3000/api/pacientes?ci=498164-1E
+      - url: http://localhost:3000/api/pacientes?ci=4981641E
         name: Buscar pacientes por ci
         meta:
           id: req_faf9fd75af324c6295772e0548e5e420
           created: 1791312254102
-          modified: 1791321601708
+          modified: 1791321783663
           isPrivate: false
           description: ""
           sortKey: -1791244761259.625
