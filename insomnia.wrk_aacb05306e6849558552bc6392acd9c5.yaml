@@ -229,12 +229,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3000/api/pacientes?q=yuri
+      - url: http://localhost:3000/api/pacientes?page=1&limit=50&q=YURI
         name: Listar pacientes por nombre persona
         meta:
           id: req_65f1a644dfbe45d6843cf7d7d77f4548
           created: 1791304471224
-          modified: 1791304919491
+          modified: 1791311374540
           isPrivate: false
           description: ""
           sortKey: -1791256671090.5
