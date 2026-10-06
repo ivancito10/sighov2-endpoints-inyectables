@@ -12,7 +12,7 @@ collection:
     meta:
       id: req_87b2e60f97154c48a4ac246b83030273
       created: 1790353751017
-      modified: 1790598852727
+      modified: 1791208633415
       isPrivate: false
       description: ""
       sortKey: -1790353751017
@@ -68,7 +68,7 @@ collection:
     meta:
       id: req_d4317b7525954d778bca7cb7dc5e5c36
       created: 1790959938780
-      modified: 1790966613905
+      modified: 1791305563151
       isPrivate: false
       description: ""
       sortKey: -1790353750817
@@ -187,19 +187,82 @@ collection:
       sortKey: -1790951215688
       description: ""
     children:
-      - url: http://localhost:3000/api/pacientes/8467
-        name: Buscar paciente persona
+      - url: http://localhost:3000/api/pacientes/49
+        name: Buscar paciente id persona
         meta:
           id: req_a38d6106276641468d055830046de484
           created: 1790961743709
-          modified: 1790961869924
+          modified: 1791304713503
           isPrivate: false
           description: ""
           sortKey: -1790961743709
         method: GET
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk2MTgxMywiZXhwIjoxNzkwOTkwNjEzfQ.jISHOYduwa2IPknrfVKA3aMCNfpLIal4Pbmm8E-O7ts
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTI5NDQyNywiZXhwIjoxNzkxMzIzMjI3fQ.zKV7mP9IIX22UcokyFWKAiVnJvgStnGkdn8vO0OJxcY
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/s1/administracion/pacientes
+        name: Listar pacientes Anterior Sistema
+        meta:
+          id: req_65dd53fe29e14720b1b59ec574722d50
+          created: 1791304310414
+          modified: 1791304924188
+          isPrivate: false
+          description: ""
+          sortKey: -1791304310414
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTMwNDM0NywiZXhwIjoxNzkxMzMzMTQ3fQ.Gx9lQLri232L13O96u1nYliOPyHeSKLBYUfYY-K9GbM
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/pacientes?q=yuri
+        name: Listar pacientes por nombre persona
+        meta:
+          id: req_65f1a644dfbe45d6843cf7d7d77f4548
+          created: 1791304471224
+          modified: 1791304919491
+          isPrivate: false
+          description: ""
+          sortKey: -1791256671090.5
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTMwNDM0NywiZXhwIjoxNzkxMzMzMTQ3fQ.Gx9lQLri232L13O96u1nYliOPyHeSKLBYUfYY-K9GbM
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/api/pacientes
+        name: "Listar pacientes "
+        meta:
+          id: req_43e326419d0f40c7a2f6335c8fd3a7ef
+          created: 1791305046096
+          modified: 1791305059696
+          isPrivate: false
+          description: ""
+          sortKey: -1791232851428.75
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTMwNDM0NywiZXhwIjoxNzkxMzMzMTQ3fQ.Gx9lQLri232L13O96u1nYliOPyHeSKLBYUfYY-K9GbM
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -434,14 +497,14 @@ collection:
         meta:
           id: req_1296301e1f424cd79017e19b36697ab6
           created: 1790960723445
-          modified: 1790962052412
+          modified: 1791210369302
           isPrivate: false
           description: ""
           sortKey: -1790961461944
         method: GET
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MDk1OTQxMywiZXhwIjoxNzkwOTg4MjEzfQ.frV-wdLZajC3UpbvKbBiRoJyS59j3laB8P6xxe9rjDU
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTIwODYzMywiZXhwIjoxNzkxMjM3NDMzfQ.8xrMj1Geub8qHZzCqtLiIaEQpTpzJ3nBzks9l6Dz8Ns
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -471,6 +534,65 @@ collection:
         authentication:
           type: bearer
           token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTkyLjE2OC4yLjU2OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE3OTA5NjY2NjUsImV4cCI6MTc5MDk3NzQ2NSwibmJmIjoxNzkwOTY2NjY1LCJqdGkiOiJJS2t5c0ZtV2g4SEFnRkVjIiwic3ViIjoiMTU5MTgiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SpbAK61DtqM-4C7kwuXxILTB0YEQoSeV8f3CegGxH8Q
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: ESPECIALISTA
+    meta:
+      id: fld_5bc31703dae04a7cbcc870bd3aff4a48
+      created: 1791209028913
+      modified: 1791209028913
+      sortKey: -1791209028913
+      description: ""
+    children:
+      - url: http://localhost:3000/api/especialistas/125
+        name: Especialista por id
+        meta:
+          id: req_8dbfa68a0b824577abf94f8e1a3ae1e0
+          created: 1791209031767
+          modified: 1791304998652
+          isPrivate: false
+          description: ""
+          sortKey: -1791209031767
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTI5NDQyNywiZXhwIjoxNzkxMzIzMjI3fQ.zKV7mP9IIX22UcokyFWKAiVnJvgStnGkdn8vO0OJxcY
+          prefix: ""
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: PERSONA
+    meta:
+      id: fld_989e105961484d43b0a2ae51688a9d90
+      created: 1791305360920
+      modified: 1791305360920
+      sortKey: -1791305360920
+      description: ""
+    children:
+      - url: http://localhost:3000/api/personas?pagina=2
+        name: Listar persona paginado
+        meta:
+          id: req_d0b4e045c75747fdac5225464b0855e3
+          created: 1791305437639
+          modified: 1791305513448
+          isPrivate: false
+          description: ""
+          sortKey: -1791305451756
+        method: GET
+        authentication:
+          type: bearer
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTMwNDM0NywiZXhwIjoxNzkxMzMzMTQ3fQ.Gx9lQLri232L13O96u1nYliOPyHeSKLBYUfYY-K9GbM
         settings:
           renderRequestBody: true
           encodeUrl: true
