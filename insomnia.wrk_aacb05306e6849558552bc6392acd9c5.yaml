@@ -250,19 +250,19 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3000/api/pacientes?page=1&limit=50
+      - url: http://localhost:3000/api/pacientes?page=1&limit=20000
         name: "Listar pacientes "
         meta:
           id: req_43e326419d0f40c7a2f6335c8fd3a7ef
           created: 1791305046096
-          modified: 1791319257290
+          modified: 1791386300763
           isPrivate: false
           description: ""
           sortKey: -1791232851428.75
         method: GET
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTMwNDM0NywiZXhwIjoxNzkxMzMzMTQ3fQ.Gx9lQLri232L13O96u1nYliOPyHeSKLBYUfYY-K9GbM
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIyNTUxLCJ1c2VybmFtZSI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRQZXJzb25hIjoyNjMwMywibm9tYnJlQ29tcGxldG8iOiJJVkFOIFNFUkdJTyBQSElMQ08gQ09ORE9SSSIsImlkRXNwZWNpYWxpc3RhIjpudWxsLCJpYXQiOjE3OTEzODYwMTYsImV4cCI6MTc5MTQxNDgxNn0.CEvBQgQQCTLZytm1r_iNorlmCQ9SMY147KxbTym6EWE
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -271,19 +271,19 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3000/api/pacientes?ci=4981641E
+      - url: http://localhost:3000/api/pacientes?ci=4981
         name: Buscar pacientes por ci
         meta:
           id: req_faf9fd75af324c6295772e0548e5e420
           created: 1791312254102
-          modified: 1791321783663
+          modified: 1791387404535
           isPrivate: false
           description: ""
           sortKey: -1791244761259.625
         method: GET
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTMwNDM0NywiZXhwIjoxNzkxMzMzMTQ3fQ.Gx9lQLri232L13O96u1nYliOPyHeSKLBYUfYY-K9GbM
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIyNTUxLCJ1c2VybmFtZSI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRQZXJzb25hIjoyNjMwMywibm9tYnJlQ29tcGxldG8iOiJJVkFOIFNFUkdJTyBQSElMQ08gQ09ORE9SSSIsImlkRXNwZWNpYWxpc3RhIjpudWxsLCJpYXQiOjE3OTEzNzc4NTIsImV4cCI6MTc5MTQwNjY1Mn0.Aaosq6BPTzEEDD7D0Z_7WxeyMdVNmYsBthi41lTGLiM
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -313,19 +313,19 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: " http://localhost:3000/api/pacientes?matricula=531205PPJ"
+      - url: " http://localhost:3000/api/pacientes?matricula=36"
         name: Busca pacientes matricula
         meta:
           id: req_64e2816c56484469954d1c6fc8f5c46c
           created: 1791318856249
-          modified: 1791319242920
+          modified: 1791387801880
           isPrivate: false
           description: ""
           sortKey: -1791235828886.4688
         method: GET
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTMwNDM0NywiZXhwIjoxNzkxMzMzMTQ3fQ.Gx9lQLri232L13O96u1nYliOPyHeSKLBYUfYY-K9GbM
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIyNTUxLCJ1c2VybmFtZSI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRQZXJzb25hIjoyNjMwMywibm9tYnJlQ29tcGxldG8iOiJJVkFOIFNFUkdJTyBQSElMQ08gQ09ORE9SSSIsImlkRXNwZWNpYWxpc3RhIjpudWxsLCJpYXQiOjE3OTEzODYwMTYsImV4cCI6MTc5MTQxNDgxNn0.CEvBQgQQCTLZytm1r_iNorlmCQ9SMY147KxbTym6EWE
         settings:
           renderRequestBody: true
           encodeUrl: true
