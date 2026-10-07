@@ -187,19 +187,19 @@ collection:
       sortKey: -1790951215688
       description: ""
     children:
-      - url: http://localhost:3000/api/pacientes/123
+      - url: http://localhost:3000/api/pacientes/26893
         name: Buscar paciente id persona
         meta:
           id: req_a38d6106276641468d055830046de484
           created: 1790961743709
-          modified: 1791318577472
+          modified: 1791388849945
           isPrivate: false
           description: ""
           sortKey: -1790961743709
         method: GET
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTI5NDQyNywiZXhwIjoxNzkxMzIzMjI3fQ.zKV7mP9IIX22UcokyFWKAiVnJvgStnGkdn8vO0OJxcY
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIyNTUxLCJ1c2VybmFtZSI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRQZXJzb25hIjoyNjMwMywibm9tYnJlQ29tcGxldG8iOiJJVkFOIFNFUkdJTyBQSElMQ08gQ09ORE9SSSIsImlkRXNwZWNpYWxpc3RhIjpudWxsLCJpYXQiOjE3OTEzODYwMTYsImV4cCI6MTc5MTQxNDgxNn0.CEvBQgQQCTLZytm1r_iNorlmCQ9SMY147KxbTym6EWE
         settings:
           renderRequestBody: true
           encodeUrl: true
@@ -250,12 +250,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3000/api/pacientes?page=1&limit=20000
+      - url: http://localhost:3000/api/pacientes?page=1&limit=200
         name: "Listar pacientes "
         meta:
           id: req_43e326419d0f40c7a2f6335c8fd3a7ef
           created: 1791305046096
-          modified: 1791386300763
+          modified: 1791390042598
           isPrivate: false
           description: ""
           sortKey: -1791232851428.75
@@ -271,12 +271,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3000/api/pacientes?ci=4981
+      - url: http://localhost:3000/api/pacientes?ci=17274842
         name: Buscar pacientes por ci
         meta:
           id: req_faf9fd75af324c6295772e0548e5e420
           created: 1791312254102
-          modified: 1791387404535
+          modified: 1791390125479
           isPrivate: false
           description: ""
           sortKey: -1791244761259.625
