@@ -12,7 +12,7 @@ collection:
     meta:
       id: req_87b2e60f97154c48a4ac246b83030273
       created: 1790353751017
-      modified: 1791208633415
+      modified: 1791399784741
       isPrivate: false
       description: ""
       sortKey: -1790353751017
@@ -250,12 +250,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:3000/api/pacientes?page=1&limit=200
+      - url: http://localhost:3000/api/pacientes?page=1&limit=18000
         name: "Listar pacientes "
         meta:
           id: req_43e326419d0f40c7a2f6335c8fd3a7ef
           created: 1791305046096
-          modified: 1791390042598
+          modified: 1791399769331
           isPrivate: false
           description: ""
           sortKey: -1791232851428.75
@@ -643,19 +643,19 @@ collection:
       sortKey: -1791305360920
       description: ""
     children:
-      - url: http://localhost:3000/api/personas?pagina=2
+      - url: http://localhost:3000/api/personas?pagina=1&limite=18000
         name: Listar persona paginado
         meta:
           id: req_d0b4e045c75747fdac5225464b0855e3
           created: 1791305437639
-          modified: 1791305513448
+          modified: 1791403405943
           isPrivate: false
           description: ""
           sortKey: -1791305451756
         method: GET
         authentication:
           type: bearer
-          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMjU1MSIsInVzZXJuYW1lIjoiSVZBTiBTRVJHSU8gUEhJTENPIENPTkRPUkkiLCJpZFBlcnNvbmEiOjI2MzAzLCJub21icmVDb21wbGV0byI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRFc3BlY2lhbGlzdGEiOm51bGwsImlhdCI6MTc5MTMwNDM0NywiZXhwIjoxNzkxMzMzMTQ3fQ.Gx9lQLri232L13O96u1nYliOPyHeSKLBYUfYY-K9GbM
+          token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIyNTUxLCJ1c2VybmFtZSI6IklWQU4gU0VSR0lPIFBISUxDTyBDT05ET1JJIiwiaWRQZXJzb25hIjoyNjMwMywibm9tYnJlQ29tcGxldG8iOiJJVkFOIFNFUkdJTyBQSElMQ08gQ09ORE9SSSIsImlkRXNwZWNpYWxpc3RhIjpudWxsLCJpYXQiOjE3OTEzOTk3ODUsImV4cCI6MTc5MTQyODU4NX0.C1zI7vIATgeOiJKPx7gQeHgRxRWIjH6ptKHas_phIvc
         settings:
           renderRequestBody: true
           encodeUrl: true
